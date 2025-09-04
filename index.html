@@ -12,17 +12,19 @@
     }
   </script>
 </head>
-<body class="font-sans text-gray-800">
+<body class="font-sans text-gray-800 bg-gray-50">
 
-  <!-- Navbar -->
+  <!-- Header -->
   <header class="bg-gray-900 text-white py-4 px-8 flex justify-between items-center sticky top-0 z-50 shadow-md">
-    <h1 class="text-2xl font-bold">RapidInc</h1>
+    <a href="index.html" class="flex items-center space-x-3">
+      <img src="logo.jpg" alt="RapidInc Logo" class="h-16 w-16 rounded-full object-cover border-4 border-white shadow-lg">
+    </a>
     <!-- Desktop Menu -->
-    <nav class="hidden md:flex space-x-6">
-      <a href="index.html" class="hover:text-orange-500">Home</a>
-      <a href="about.html" class="hover:text-orange-500">About</a>
-      <a href="products.html" class="hover:text-orange-500">Products</a>
-      <a href="contact.html" class="hover:text-orange-500">Contact</a>
+    <nav class="hidden md:flex space-x-6 text-lg font-medium">
+      <a href="index.html" class="text-orange-500 font-semibold border-b-2 border-orange-500">Home</a>
+      <a href="about.html" class="hover:text-orange-500 transition">About</a>
+      <a href="products.html" class="hover:text-orange-500 transition">Products</a>
+      <a href="contact.html" class="hover:text-orange-500 transition">Contact</a>
     </nav>
     <!-- Mobile Menu Button -->
     <button class="md:hidden" onclick="toggleMenu()">
@@ -36,27 +38,30 @@
 
   <!-- Mobile Nav -->
   <nav id="mobile-menu" class="hidden bg-gray-800 text-white flex flex-col space-y-4 py-4 px-6 md:hidden">
-    <a href="index.html" class="hover:text-orange-500">Home</a>
+    <a href="index.html" class="text-orange-500">Home</a>
     <a href="about.html" class="hover:text-orange-500">About</a>
     <a href="products.html" class="hover:text-orange-500">Products</a>
     <a href="contact.html" class="hover:text-orange-500">Contact</a>
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-[url('dashcam-hero.png')] bg-cover bg-center text-white text-center py-32">
-    <h2 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Drive Smarter with RapidInc Dashcams</h2>
-    <p class="text-lg mb-6 drop-shadow">Reliable, high-quality dashcams for every journey.</p>
-    <a href="products.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold">Shop Now</a>
+  <section class="bg-[url('dashcam-hero.png')] bg-cover bg-center text-white text-center py-32 relative">
+    <div class="bg-black/50 absolute inset-0"></div>
+    <div class="relative z-10">
+      <h2 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Drive Smarter with RapidInc Dashcams</h2>
+      <p class="text-lg mb-6 drop-shadow">Reliable, high-quality dashcams for every journey.</p>
+      <a href="products.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition">Shop Now</a>
+    </div>
   </section>
 
   <!-- Details Section -->
   <section class="py-16 px-6 md:px-20 bg-gray-50 text-gray-900">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Professional Dashcam Installation for Safer Driving</h2>
-      <p class="mb-8">Protect yourself, your loved ones, and your vehicle with reliable dashcam installation. We provide expert dashcam setup—whether it’s front, rear, or full 360° coverage—so you’ll always have peace of mind on the road.</p>
+      <h2 class="text-3xl font-bold mb-6 text-center">Professional Dashcam Installation for Safer Driving</h2>
+      <p class="mb-8 text-center text-gray-700">Protect yourself, your loved ones, and your vehicle with reliable dashcam installation. We provide expert dashcam setup—whether it’s front, rear, or full 360° coverage—so you’ll always have peace of mind on the road.</p>
 
       <h3 class="text-2xl font-semibold mb-4">Why Choose Us?</h3>
-      <ul class="list-disc list-inside mb-8 space-y-2">
+      <ul class="list-disc list-inside mb-8 space-y-2 text-gray-700">
         <li>✔ Expert Installation – Clean, hidden wiring with no damage to your car.</li>
         <li>✔ Any Brand, Any Model – We install customer-owned or supplied dashcams.</li>
         <li>✔ Fleet Solutions – Bulk installation for taxis, delivery vans, and corporate vehicles.</li>
@@ -64,7 +69,7 @@
       </ul>
 
       <h3 class="text-2xl font-semibold mb-4">Our Services</h3>
-      <ul class="list-disc list-inside mb-8 space-y-2">
+      <ul class="list-disc list-inside mb-8 space-y-2 text-gray-700">
         <li>Front Camera Installation</li>
         <li>Front + Rear Camera Setup</li>
         <li>Hardwire Installation (Parking Mode Ready)</li>
@@ -73,113 +78,67 @@
       </ul>
 
       <h3 class="text-2xl font-semibold mb-4">Benefits of Having a Dashcam</h3>
-      <ul class="list-disc list-inside mb-8 space-y-2">
+      <ul class="list-disc list-inside mb-8 space-y-2 text-gray-700">
         <li>■ Clear Evidence in Accidents – Protect yourself from false claims.</li>
         <li>■ Extra Security – Monitor your car even when parked.</li>
         <li>■ Ideal for Businesses – Keep your drivers accountable and safe.</li>
         <li>■ Peace of Mind – Drive confidently knowing everything is recorded.</li>
       </ul>
-
-
-<!-- Testimonials Section -->
-<section class="bg-gray-50 py-20 px-6">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-12">What Our Customers Say</h2>
-    <div class="grid gap-8 md:grid-cols-3">
-      
-      <!-- Testimonial Card -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="flex justify-center mb-4">
-          <img src="https://i.pravatar.cc/80?img=11" alt="Customer" class="w-16 h-16 rounded-full border-2 border-orange-500">
-        </div>
-        <p class="text-gray-600 mb-4 italic">
-          "The dashcam quality is crystal clear even at night. I feel much safer driving knowing everything is recorded."
-        </p>
-        <div class="flex justify-center text-orange-500 mb-2">
-          ⭐⭐⭐⭐⭐
-        </div>
-        <h4 class="font-semibold">Maria S., Manila</h4>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="flex justify-center mb-4">
-          <img src="https://i.pravatar.cc/80?img=22" alt="Customer" class="w-16 h-16 rounded-full border-2 border-orange-500">
-        </div>
-        <p class="text-gray-600 mb-4 italic">
-          "Easy to install and use! The wide-angle lens captured every detail during my road trip. Highly recommend!"
-        </p>
-        <div class="flex justify-center text-orange-500 mb-2">
-          ⭐⭐⭐⭐⭐
-        </div>
-        <h4 class="font-semibold">Joseph R., Antipolo</h4>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="flex justify-center mb-4">
-          <img src="https://i.pravatar.cc/80?img=33" alt="Customer" class="w-16 h-16 rounded-full border-2 border-orange-500">
-        </div>
-        <p class="text-gray-600 mb-4 italic">
-          "Customer support was very responsive. The dashcam helped me prove my case in an accident. Worth every peso."
-        </p>
-        <div class="flex justify-center text-orange-500 mb-2">
-          ⭐⭐⭐⭐⭐
-        </div>
-        <h4 class="font-semibold">Angela D., Quezon City</h4>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="flex justify-center mb-4">
-          <img src="https://i.pravatar.cc/80?img=44" alt="Customer" class="w-16 h-16 rounded-full border-2 border-orange-500">
-        </div>
-        <p class="text-gray-600 mb-4 italic">
-          "Compact design but powerful performance. The loop recording feature ensures I never run out of memory space."
-        </p>
-        <div class="flex justify-center text-orange-500 mb-2">
-          ⭐⭐⭐⭐⭐
-        </div>
-        <h4 class="font-semibold">Carlo V., Makati</h4>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="flex justify-center mb-4">
-          <img src="https://i.pravatar.cc/80?img=55" alt="Customer" class="w-16 h-16 rounded-full border-2 border-orange-500">
-        </div>
-        <p class="text-gray-600 mb-4 italic">
-          "Crystal-clear 1080p resolution and motion detection is a game changer. Feels premium but still affordable."
-        </p>
-        <div class="flex justify-center text-orange-500 mb-2">
-          ⭐⭐⭐⭐⭐
-        </div>
-        <h4 class="font-semibold">Jenny P., Pasig</h4>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="flex justify-center mb-4">
-          <img src="https://i.pravatar.cc/80?img=66" alt="Customer" class="w-16 h-16 rounded-full border-2 border-orange-500">
-        </div>
-        <p class="text-gray-600 mb-4 italic">
-          "Perfect for daily commuters. Installation took less than 10 minutes and it works flawlessly!"
-        </p>
-        <div class="flex justify-center text-orange-500 mb-2">
-          ⭐⭐⭐⭐⭐
-        </div>
-        <h4 class="font-semibold">Bryan C., Cebu</h4>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-      <div class="mt-10 text-center">
-        <h3 class="text-2xl font-bold mb-4">Book Your Installation Today</h3>
-        <a href="contact.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Book Now</a>
+  <!-- Testimonials Section -->
+  <section class="bg-gray-50 py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12">What Our Customers Say</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Reusable Testimonial Card -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+          <div class="flex justify-center mb-4">
+            <img src="https://i.pravatar.cc/80?img=11" alt="Customer" class="w-16 h-16 rounded-full border-2 border-orange-500">
+          </div>
+          <p class="text-gray-600 mb-4 italic">"The dashcam quality is crystal clear even at night. I feel much safer driving knowing everything is recorded."</p>
+          <div class="flex justify-center text-orange-500 mb-2">⭐⭐⭐⭐⭐</div>
+          <h4 class="font-semibold">Maria S., Manila</h4>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+          <div class="flex justify-center mb-4">
+            <img src="https://i.pravatar.cc/80?img=22" alt="Customer" class="w-16 h-16 rounded-full border-2 border-orange-500">
+          </div>
+          <p class="text-gray-600 mb-4 italic">"Easy to install and use! The wide-angle lens captured every detail during my road trip. Highly recommend!"</p>
+          <div class="flex justify-center text-orange-500 mb-2">⭐⭐⭐⭐⭐</div>
+          <h4 class="font-semibold">Joseph R., Antipolo</h4>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+          <div class="flex justify-center mb-4">
+            <img src="https://i.pravatar.cc/80?img=33" alt="Customer" class="w-16 h-16 rounded-full border-2 border-orange-500">
+          </div>
+          <p class="text-gray-600 mb-4 italic">"Customer support was very responsive. The dashcam helped me prove my case in an accident. Worth every peso."</p>
+          <div class="flex justify-center text-orange-500 mb-2">⭐⭐⭐⭐⭐</div>
+          <h4 class="font-semibold">Angela D., Quezon City</h4>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Call to Action -->
+  <div class="mt-10 text-center">
+    <h3 class="text-2xl font-bold mb-4">Book Your Installation Today</h3>
+    <a href="contact.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Book Now</a>
+  </div>
+
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-6 mt-10">
-    <p>&copy; 2020-2025 RapidInc. All rights reserved.</p>
+  <footer class="bg-gray-900 text-gray-400 text-center py-8 mt-12 border-t border-gray-800">
+    <div class="flex flex-col items-center space-y-3">
+      <img src="logo.jpg" alt="RapidInc Logo" class="h-16 w-16 rounded-full object-cover border-4 border-white shadow-lg">
+      <p>© 2020-2025 <span class="text-white font-semibold">RapidInc</span>. All rights reserved.</p>
+      <p>
+        <a href="#" class="hover:text-orange-500 transition">Privacy Policy</a> | 
+        <a href="#" class="hover:text-orange-500 transition">Terms of Service</a>
+      </p>
+    </div>
   </footer>
 
 </body>
